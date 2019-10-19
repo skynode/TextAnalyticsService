@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TextAnalyticsService.Enums;
 using TextAnalyticsService.Services;
+using TextAnalyticsService.Models.DTO;
 
 namespace TextAnalyticsService.Controllers
 {
@@ -12,11 +13,6 @@ namespace TextAnalyticsService.Controllers
     [Route("api/[controller]")]
     public class TextStatisticsService
     {
-        [HttpGet]
-        public async Task<IActionResult> GenerateStatistics(string text)
-        {
-
-            return await new JsonResult()
-        }
+        
     }
 }

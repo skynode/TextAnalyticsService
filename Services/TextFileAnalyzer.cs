@@ -19,11 +19,12 @@ namespace TextAnalyticsService.Services
 
         public async Task<int> CountSpecialCharacter(string text, char character)
         {
-            
+            throw new NotImplementedException();
         }
 
         public async Task<int> CountWords(string text)
         {
+            text = fileLocation;
             using var streamReader = new StreamReader(text);
 
             int wordCounter = default;
